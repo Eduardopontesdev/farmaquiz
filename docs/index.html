@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://*.supabase.co; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#0E4D3C">
+<title>FarmaQuiz</title>
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<a class="skip" href="#app">Pular para o conteúdo</a>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#/home" aria-label="FarmaQuiz, ir para o início"><img src="img/icon.svg" alt="" width="34" height="34"><span>FarmaQuiz</span></a>
+    <span id="chip" class="chip" hidden></span>
+  </header>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+</div>
+<nav id="tabs" class="tabbar" aria-label="Principal" hidden></nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p class="wrap">O FarmaQuiz precisa de JavaScript para funcionar.</p></noscript>
+<script src="config.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
